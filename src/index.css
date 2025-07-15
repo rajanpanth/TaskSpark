@@ -1,68 +1,193 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* TO DO CSS */
+.to-do-list{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 100px;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+h1{
+    font-size: 4rem;
 }
-a:hover {
-  color: #535bf2;
+button{
+    font-size: 1.7rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.add-button{
+    margin-top: 20px;
+    background-color: rgb(140, 184, 74);
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.add-button:hover{
+    background-color: #0056b3;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.delete-button{
+    background-color: rgb(255, 0, 0);
 }
-button:hover {
-  border-color: #646cff;
+.delete-button:hover{
+    background-color: rgb(200, 0, 0);
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.move-button{
+    background-color: rgb(255, 165, 0);
+}
+button.move-button:hover{
+    background-color: rgb(200, 130, 0);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+input[type="text"]{
+    width: 300px;
+    padding: 10px;
+    font-size: 1.5rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: gray;
+}
+ol{
+    padding: 0;
+
+}
+li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+
+}
+li:hover{
+    background-color: #e9ecef;
+}
+.text{
+    flex-grow: 1;
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+
+}
+.delete-button, .move-button{
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 1.7rem;
+    border-radius: 5px;
+    color: white;
+}
+body{
+    background-color: #f0f2f5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Digital Clock CSS */
+body{
+background-image: url(./assets/deer.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 100vh;
+margin: 0;
+color: white;
+font-family: 'Courier New', Courier, monospace;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.clock-container{
+backdrop-filter: blur(10px);
+width: 100%;
+padding: 10px 0;
+}
+.clock{
+  color: white;
+  font-size: 6em;
+  font-weight: bold;
+  font-family: monospace;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  text-align: center;
+
+}
+
+
+/* Stop Watch CSS */
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+}
+.stopwatch{
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid;
+    border-radius: 50px;
+    background-color: white;
+    padding: 30px;
+}
+.display{
+    font-size: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgb(34, 51, 51);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.546);
+    margin-bottom: 25px;
+}
+.control button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border: none;
+    border-radius: 10px;
+cursor: pointer;
+color: white;
+transition: background-color 0.5 ease;
+}
+.start-button{
+    background-color: greenyellow;
+}
+.start-button:hover{
+   
+     background-color: rgb(106, 169, 12);
+}
+.stop-button{
+    background-color: orangered;
+}
+.stop-button:hover{
+  background-color: rgb(134, 45, 13);
+}
+.reset-button{
+    background-color: blue;
+}
+.reset-button:hover{
+  background-color: rgb(8, 8, 97);
+}
+
+body{
+background-image: url(./assets/deer.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 100vh;
+margin: 0;
+color: white;
+font-family: 'Courier New', Courier, monospace;
+display: flex;
+justify-content: center;
+align-items: center;
 }
