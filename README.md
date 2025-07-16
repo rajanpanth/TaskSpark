@@ -1,12 +1,37 @@
-# React + Vite
+# 📝 To-Do Productivity App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A powerful and minimal **React.js** web app that combines a to-do list with a built-in **clock and timer** to help you stay focused, reduce distractions, and boost productivity.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ **To-Do List** – Add, update, delete, and check off tasks
+- ⏰ **Live Clock** – Always stay aware of the current time
+- ⏳ **Countdown Timer** – Stay focused using time-blocking (like Pomodoro technique)
+- 💡 **Distraction-Free UI** – Clean interface to help you focus on what matters
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js
+- **Styling:** CSS / Styled Components (choose based on your implementation)
+- **State Management:** useState, useEffect hooks
+
+---
+
+## 📸 Screenshots
+
+> *(Add screenshots here if available)*  
+> Example:  
+> ![App Screenshot](./screenshots/todo-app.png)
+
+---
+
+## 📦 Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
