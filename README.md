@@ -25,7 +25,7 @@ A powerful and minimal **React.js** web app that combines a to-do list with a bu
 
 > *(Add screenshots here if available)*  
 > Example:  
-> ![App Screenshot](./screenshots/todo-app.png)
+> ![App Screenshot](todo.png)
 
 ---
 
