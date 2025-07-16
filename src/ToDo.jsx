@@ -1,5 +1,5 @@
 import React from 'react'
-
+import StopWatch from './StopWatch';
 const ToDoList = () => {
 
     const [tasks, setTasks] = React.useState(["Sample Task 1", "Sample Task 2"]);
@@ -57,8 +57,9 @@ const ToDoList = () => {
             <li key={index}>
                 <span className='text'>{task}</span>
                 <button className='delete-button' onClick={() => handleDeleteTask(index)}>Delete</button>
-                <button className='move-up-button' onClick={() => moveTaskUp(index)}>Move Up</button>
-                <button className='move-down-button' onClick={() => moveTaskDown(index)}>Move Down</button>
+                <button className='move-up-button' onClick={() => moveTaskUp(index)}>↑</button>
+                <button className='move-down-button' onClick={() => moveTaskDown(index)}>↓</button>
+                <StopWatch />
             </li>
         ))}
     </ol>

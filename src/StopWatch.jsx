@@ -53,9 +53,9 @@ const StopWatch = () => {
             <div className='display'>
                 {formatTime()}
             <div className='control'>
-                <button onClick={start} className='start-button'>Start</button>
-                <button onClick={stop} className='stop-button'>Stop</button>
-                <button onClick={reset} className='reset-button'>Reset</button>
+                <button onClick={start} className='start-button'>‖</button>
+                <button onClick={stop} className='stop-button'>▶︎</button>
+                <button onClick={reset} className='reset-button'>↺</button>
             </div>
             </div>
 
